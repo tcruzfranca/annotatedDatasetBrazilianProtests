@@ -8,9 +8,24 @@ import time
 import codecs
 import sys
 
+'''
+    @author
+        Tiago Cruz de França
+    @since
+        12-23-2015
+    @version 
+        1.0.0
+    @see 
+        https://github.com/tcruzfranca/annotatedDatasetBrazilianProtests
+    
+    description 
+                This code is useful for retrieval tweets usin list of tweet's IDs. Such list must be a file in which each ID is in a different line.
+                In the end of this file you can see the main function and the instructions for set correctly the configurations needed.
+    
+    Please access the git address and cite at least one: our paper or the git account if we want use this script.
+'''
 def logError(log, msg):
     log.write(msg+"\n")
-    
 
 '''
 Save files. Just a utility function.
