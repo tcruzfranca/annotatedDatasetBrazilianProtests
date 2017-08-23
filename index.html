@@ -1,39 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <!-- Adaption from a theme made by www.w3schools.com - No Copyright -->
+  <!-- Adapted by Tiago França-->
+  <title>2013 Brazilian Protest Gold Standard DataSet</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="page-content/style.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
-<div class="jumbotron text-center">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
-</div>
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+    <!--
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     -->
+      <a class="navbar-brand w3-xlarge text-space btn btn-default" href="#">Home <i class="fa fa-home"></i></a>
+
+      <a class="btn btn-link git" href="#">source<img src="page-content/git-ico.png"/></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">dataset</a></li>
+        <li><a href="#">raw Dataset</a></li>
+        <li><a href="#">script</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="w3-container w3-teal container-fluid-2 bg-1 text-center">
+
+  <div class="w3-display-container">
+      <img src="page-content/img-topo.jpg" class="w3-image  " style="display:inline" alt="#vemprarua" width="1700">
+      <div class="w3-display-topmiddle w3-container">
+        <h1 class="titulo-pag">Brazilian Protest 2013, the Gold Standard Dataset</h1>
+      </div>
+  </div>
   
-<div class="container">
+  <h4 class="margin-side text-alignment-1 margin-top">This page presents a sentiment-annotated Twitter gold standard dataset for the Brazilian protests in 2013. The dataset consists of 4,422 messages (tweets) annotated by three raters with information about the sentiment expressed in the messsages. This is a valuable resource for social media-based sentiment analysis in the context of protests events. Besides the gold standard dataset, we are also provide the raw dataset as eight files of tweets IDs and a python script for retrieve the tweets.</h4>
+  
+  
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-2 text-center">    
+  Opt-1
+  
+</div>
+
+
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Download</h3><br>
   <div class="row">
     <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
   </div>
 </div>
 
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Theme adapted by Tiago Cruz de França</p>
+  <p class="p-credits">This theme is an adaptation from Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+</footer>
+
 </body>
 </html>
+
