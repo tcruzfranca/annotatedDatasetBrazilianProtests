@@ -6,21 +6,26 @@
   <title>2013 Brazilian Protest Gold Standard DataSet</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="page-content/style.css"/>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script type="text/javascript" src="page-content/script.js"></script>
 
 </head>
-<body>
+<body ng-app="">
 
 <!-- Navbar -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default w3-border w3-card-4"" data-spy="affix" data-offset-top="200"">
   <div class="container">
-    <div class="navbar-header">
+    <div class="navbar-header" id="navbar-header">
     <!--
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -28,25 +33,27 @@
         <span class="icon-bar"></span>                        
       </button>
      -->
-      <a class="navbar-brand w3-xlarge text-space btn btn-default" href="#">Home <i class="fa fa-home"></i></a>
-
-      <a class="btn btn-link git" href="#">source<img src="page-content/git-ico.png"/></a>
+      <a class="navbar-brand w3-xlarge text-space btn btn-default" href="#navbar-header">Home <i class="fa fa-home"></i></a>
+      <a class="btn btn-link git" href="https://github.com/tcruzfranca/annotatedDatasetBrazilianProtests">source<img src="page-content/git-ico.png"/></a>
+      
     </div>
+    
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">dataset</a></li>
-        <li><a href="#">raw Dataset</a></li>
-        <li><a href="#">script</a></li>
+        <li class="menu"><a href="#gold-div" class="w3-ripple w3-border w3-border-gray w3-round-xlarge">Dataset</a></li>
+        <li class="menu"><a href="#content-div" class="w3-ripple w3-border w3-border-blue-gray w3-round-xlarge">Content</a></li>
+        <li class="menu"><a href="#license-div" class="w3-ripple w3-border w3-border-gray w3-round-xlarge">Reference</a></li>
+        <li class="menu"><a href="#license-div" class="w3-ripple w3-border w3-border-gray w3-round-xlarge">License</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 
-<div class="w3-container w3-teal container-fluid-2 bg-1 text-center">
+<div class="w3-container w3-teal container-fluid-2 bg-1 text-center" id="gold-div">
 
   <div class="w3-display-container">
-      <img src="page-content/img-topo.jpg" class="w3-image  " style="display:inline" alt="#vemprarua" width="1700">
+      <img src="page-content/img-topo.jpg" class="w3-image  " style="display:inline" alt="#vemprarua" width="2000">
       <div class="w3-display-topmiddle w3-container">
         <h1 class="titulo-pag">Brazilian Protest 2013, the Gold Standard Dataset</h1>
       </div>
@@ -58,15 +65,12 @@
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-2 text-center">    
-  Opt-1
-  
+<div class="w3-container container-fluid bg-2 text-center" ng-include="'goldendataset.html'" id="content-div">    
+<!--importo o conteudo de goldendataset.html usando angular-->
 </div>
-
-
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Download</h3><br>
-  <div class="row">
+<div class="container-fluid bg-3 text-center" id="ref-license-div">    
+  <h3 class="margin">Downloads and Informations</h3><br>  
+    <div class="row">
     <div class="col-sm-4">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
@@ -80,6 +84,14 @@
       <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
   </div>
+</div>
+
+<div class="container-fluid bg-3 text-center" id="ref-license-div">    
+  <h3 class="margin">References and License</h3>
+  <div class="row">ARTIGO PARA SER CITADO. POR FAVOR CITE ESTE.</div>
+  <div class="row" id="pilot-paper">frança e oliveira 2014</div>
+  <div class="row">LICENSE</div>
+
 </div>
 
 <!-- Footer -->
