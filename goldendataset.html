@@ -88,10 +88,52 @@
   <div id="Annotations" class="w3-container gold " style="display:none" >
     <h4 class="margin-top margin-dataset-informations">Annotations</h4>
     <p>Three human volunteers raters classifed a sample of 4,422 tweets. The sample was build upon the raw dataset which contained more than 400 handreds of messages. Before to start the annotation task, each annotator received basics explanations related to both “why” and “when” the dataset was build. Then, the following two explanations were presented. The first one concerned to the motivation which was to understand how the activists and population express their opinions (or sentiment) in the social media, manly in Twitter. The second is related to the period of data retrieval that to occur during the manly Brazilian protests events in 2013.</p>
-    <p>The aim was to classify if the opinion expressed in the messages was in some way positive or negative about the protests. To do that, we have defined a <span style="font-weight:bold;">key question</span> as a guide for the classification task. The question is <span style="font-weight:bold;">“the tweet text expresses an opinion of agreement (positive), disagreement (negative) or neither (neutral) to the protests?”</span>. The answer should be just one to be assigned to the message. Thus, the annotators judged whether a message expresses an opinion in favor (positive) or against (negative) the protests. If a classifier judges that a message did not express a positive or negative opinion for any reason, that message should be considered neutral. In other words, we have defined <span style="font-weight:bold;">three (answers) classes: positive, negative or neutral.</span></p>
-    <p>We should note that the annotation task have started eight month after the protests events. In the first moment, just a pilot was built with 200 messages <a href="#pilot-paper" style="font-weight:bold;">[França and Oliveira, 2014]</a>. After that, the sample was built in a random way taking 1% of messages to each day of the raw data set. We also assume a minimum of one message per day if the 1% represents a value less than one. The entire labeled data set was then finished one and half year later of the protests. The results of the annotation task are in Table 2. That approach enables us to take some feedbacks such as the major of the messages were in Brazilian Portuguese. Furthermore, we could also take some inter-rater agreement measures among the annotators.</p>
+    <p>The aim was to classify if the opinion expressed in the messages was in some way positive or negative about the protests. To do that, we have defined a <span style="font-weight:bold;">key question</span> as a guide for the classification task. The question is <span style="font-weight:bold;">“the tweet text expresses an opinion of agreement (positive), disagreement (negative) or neither (neutral) to the protests?”</span>. The answer should be just one to be assigned to the message. Thus, the annotators judged whether a message expresses an opinion in favor (positive) or against (negative) the protests. If a classifier judges that a message did not express a positive or negative opinion for any reason, that message should be considered neutral. In other words, we have defined <span style="font-weight:bold;">three (answers) classes: positive, negative or neutral.</span> The table bellow shows examples of tweets messages from the dataset.</p>
+  <div class="row" style="margin-top:40px;">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-10">
+  <p style="font-weight:bold; text-align:center;">Examples of tweets and annotations assigned</p>
+
+      <table class="w3-table-all w3-hoverable w3-border table table-bordered table-config">
+        <thead>
+          <tr class="w3-green">
+            <th></th>
+            <th>Tweet text</th>
+            <th>Assigned sentiment</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>1</td>
+          <td>Falta de leitos nos hospitais públicos leva milhares de pacientes recorrem ao Ministério Público para se tratarem #VempraRua #SOSSUS</td>
+          <td>Positive</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Cara, desisto de fazer vocês entenderem. Não adianta ficar nessa mobilização " #mudabrasil" sem propôr mudanças reais.</td>
+          <td>Negative</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>O pau comendo em várias cidades do Brasil e o Fantástico começa com música feliz, falando sobre a Copa das Confederações. #protestorj</td>
+          <td>Neutral</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Convoco lutadores de Jiu-Jitsu e Muay Thai a participar dos protestos para dar surra nos baderneiros e saqueadores de lojas. #mudabrasil</td>
+          <td>Negative (it received two negative and one positive assignment)</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>A torcida continuou cantando o hino nacional, mas n foi p fazer bonito para a rede Globo e sim p mostrar sua forca! #OGiganteAcordou</td>
+          <td>Neutral (received the three possible sentiments annotations)</td>
+        </tr>
+      </table>
+   </div>
+   <div class="col-sm-1"></div>
+  </div>
+    <p>We should note that the annotation task have started eight month after the protests events. In the first moment, just a pilot was built with 200 messages <a href="#pilot-paper" style="font-weight:bold;">[França and Oliveira, 2014]</a>. After that, the sample was built in a random way taking 1% of messages to each day of the raw data set. We also assume a minimum of one message per day if the 1% represents a value less than one. The entire labeled data set was then finished one and half year later of the protests. That approach enables us to take some feedbacks such as the major of the messages were in Brazilian Portuguese. Furthermore, we could also take some inter-rater agreement measures among the annotators.</p>
     
-    <div class="row" style="margin-top:40px;">
+  <div class="row" style="margin-top:40px;">
   <div class="col-sm-1"></div>
   <div class="col-sm-5">
       <p style="font-weight:bold; text-align:center;">Rating among annotators and classes</p>
