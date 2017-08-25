@@ -15,8 +15,12 @@ import sys
         12-23-2015
     @version 
         1.0.0
-    @see 
+    @see
         https://github.com/tcruzfranca/annotatedDatasetBrazilianProtests
+        This is a specific version made for turn easy the retrival of tweets from the Brazilian protests Golden Dataset.
+        For a more generic version for retrival of tweets by id, access https://github.com/tcruzfranca/scripts.
+
+    License (BSD 2): Available in https://github.com/tcruzfranca/annotatedDatasetBrazilianProtests/blob/master/LICENSE.txt.
     
     description 
                 This code is useful for retrieval tweets usin list of tweet's IDs. Such list must be a file in which each ID is in a different line.
@@ -125,7 +129,7 @@ if __name__ == "__main__":
     client = oauth.Client(consumer, access_token)
 
     #2. Set the file of IDs
-    arq = open("idsTweets")
+    arq = open("GoldStandardDataSet.csv")
     #3. Set the destination File
     destino = codecs.open("destinationFile.json",'w',"utf-8")
     log = open("log.txt","a")

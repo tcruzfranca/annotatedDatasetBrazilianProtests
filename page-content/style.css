@@ -6,6 +6,7 @@ body {
 
 }
 p {font-size: 16px;}
+ol {font-size:16px;}
 .p-credits {font-size: 12px;}
 .margin {margin-bottom: 45px;}
 .margin-side {margin-left: 15%; margin-right:15%;}
@@ -27,8 +28,8 @@ p {font-size: 16px;}
   color: #fff;
 }
 .bg-5 { 
-  background-color: #9f9f9f; /* Black Gray */
-  color: #fff;
+  background-color: #afafaf; /* Black Gray */
+  color: #2c2c2c;
 }
 .container-fluid {
   padding-top: 50px;
@@ -44,8 +45,8 @@ p {font-size: 16px;}
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
-  font-size: 12px;
-  letter-spacing: 5px;
+  font-size: 15px;
+  letter-spacing: 0;
 }
 .navbar-nav  li a:hover {
   color: #1abc9c !important;
