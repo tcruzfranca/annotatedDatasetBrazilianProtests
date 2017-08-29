@@ -1,4 +1,7 @@
 # annotatedDatasetBrazilianProtests
+Please, visit our page https://tcruzfranca.github.io/annotatedDatasetBrazilianProtests/. There you can see more details and links for the reference paper.
+See also, the license of the python script and annotations in License.txt.
+
 This page includes:
   One file with tweet IDs and the classification of the tweets as positive, negative or neutral.
     Each message was classified by 3 humans. Each human classification is in the file. Each line has the tweet ID, 
